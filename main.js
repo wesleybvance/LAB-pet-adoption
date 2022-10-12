@@ -252,7 +252,7 @@ const pets = [
 
   const card = document.querySelector("#card");
 
-  for (let i=0; i< pets.length; i++) {
+  for (let i=0; i<pets.length; i++) {
     card.innerHTML += `<div class="card" style="width: 18rem;">
     <img src="${pets[i].imageUrl}" class="card-img-top" alt="...">
     <div class="card-body">
