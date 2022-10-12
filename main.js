@@ -240,3 +240,29 @@ const pets = [
       imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
     }
   ];
+
+  // for (i = 0; i < pets.length; i++) {
+  //   console.log(pets[i].id);
+  //   console.log(pets[i].name);
+  //   console.log(pets[i].color);
+  //   console.log(pets[i].specialSkill);
+  //   console.log(pets[i].type);
+  //   console.log(pets[i].imageUrl);
+  // };
+
+  const card = document.querySelector("#card");
+
+  for (let i=0; i<pets.length; i++) {
+    card.innerHTML += `<div class="card" style="width: 18rem;">
+    <img src="${pets[i].imageUrl}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${pets[i].name}</h5>
+      <p class="card-text">${pets[i].specialSkill}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Species: ${pets[i].type}</li>
+      <li class="list-group-item">Color: ${pets[i].color}</li>
+     
+    </ul>
+  </div>`
+  }
