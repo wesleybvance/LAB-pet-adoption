@@ -240,3 +240,14 @@ const pets = [
       imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
     }
   ];
+
+  for (i = 0; i < pets.length; i++) {
+    console.log(pets[i].id);
+    console.log(pets[i].name);
+    console.log(pets[i].color);
+    console.log(pets[i].specialSkill);
+    console.log(pets[i].type);
+    console.log(pets[i].imageUrl);
+  };
+
+  
