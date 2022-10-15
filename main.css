@@ -2,12 +2,21 @@ body {
   background-color: pink;
 }
 
-.ice {
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+}
 
 .card {
   margin: 10px;
+}
+
+.buttons-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn.btn-warning {
+  color: white;
 }
