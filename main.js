@@ -250,19 +250,47 @@ const pets = [
   //   console.log(pets[i].imageUrl);
   // };
 
-  const card = document.querySelector("#card");
 
-  for (let i=0; i<pets.length; i++) {
-    card.innerHTML += `<div class="card" style="width: 18rem;">
-    <img src="${pets[i].imageUrl}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">${pets[i].name}</h5>
-      <p class="card-text">${pets[i].specialSkill}</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Species: ${pets[i].type}</li>
-      <li class="list-group-item">Color: ${pets[i].color}</li>
-     
-    </ul>
-  </div>`
-  }
+// code from lab part 1
+  // const card = document.querySelector("#card");
+
+  // for (let i=0; i<pets.length; i++) {
+  //   card.innerHTML += `<div class="card" style="width: 18rem;">
+  //   <img src="${pets[i].imageUrl}" class="card-img-top" alt="...">
+  //   <div class="card-body">
+  //     <h5 class="card-title">${pets[i].name}</h5>
+  //     <p class="card-text">${pets[i].specialSkill}</p>
+  //   </div>
+  //   <ul class="list-group list-group-flush">
+  //     <li class="list-group-item">Species: ${pets[i].type}</li>
+  //     <li class="list-group-item">Color: ${pets[i].color}</li>
+  //   </ul>
+  // </div>`
+  // }
+
+  const renderToDom = (divId, htmlToRender) => {
+    const selectedDiv = document.querySelector(divId);
+    selectedDiv.innerHTML = htmlToRender;
+  };
+
+  const cardsOnDom = (array) => {
+    let domString = "";
+    for (const member of array) {
+      domString += `<div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="${member.imageUrl}" alt="${member.name}">
+      <div class="card-body">
+        <h5 class="card-title">${member.name}</h5>
+        <p class="card-text">${member.specialSkill}</p>
+        <p class="card-text">${member.type}</p>
+        <p class="card-text">${member.color}</p>
+      </div>
+    </div>`;
+    }
+    renderToDom("#card", domString);
+  };
+
+  const showAll = document.querySelector("#showAllButton");
+
+  showAll.addEventListener('click', () => {
+  cardsOnDom(pets);
+});
