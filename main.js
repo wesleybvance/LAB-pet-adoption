@@ -289,8 +289,34 @@ const pets = [
     renderToDom("#card", domString);
   };
 
+  const filter = (array, typeString) => {
+    const petArray = [];
+    for (const member of array) {
+      if (member.type === typeString) {
+        petArray.push(member);
+      }
+    }
+    return petArray;
+  };
+
   const showAll = document.querySelector("#showAllButton");
+  const catOnly = document.querySelector("#buttonCat");
+  const dinoOnly = document.querySelector("#buttonDino");
+  const dogOnly = document.querySelector ("#buttonDog");
 
   showAll.addEventListener('click', () => {
-  cardsOnDom(pets);
-});
+    cardsOnDom(pets);
+  });
+
+  catOnly.addEventListener('click', () => {
+    const showCats = filter(pets, 'cat');
+    cardsOnDom(showCats);
+  });
+  dinoOnly.addEventListener('click', () => {
+    const showDinos = filter(pets, 'dino');
+    cardsOnDom(showDinos);
+  });
+  dogOnly.addEventListener('click', () => {
+    const showDogs = filter(pets, 'dog');
+    cardsOnDom(showDogs);
+  });
