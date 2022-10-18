@@ -21,23 +21,31 @@
   </div>
 
   <form>
-    <div class="form-group">
+    <div class="form-group form-all">
       <label for="petName">Name</label>
       <input type="text" class="pet-name" id="petName" placeholder='ex. "Andre"'>
     </div>
-    <div class="form-group">
+    <div class="form-group form-all">
       <label for="petType">Type</label>
       <input type="text" class="pet-type" id="petType" placeholder='ex. "cat"'>
     </div>
-    <div class="form-group">
+    <div class="form-group form-all">
       <label for="petColor">Color</label>
       <input type="text" class="pet-color" id="petColor" placeholder='ex. "orange"'>
     </div>
-    <div class="form-group">
+    <div class="form-group form-all">
       <label for="petSkill">Special Skill</label>
       <input type="text" class="pet-skill" id="petSkill" placeholder='ex. "eating lasagna"'>
     </div>
+    <div class="form-all"> 
+      <label for="petUrl">Image Link</label>
+      <input type="url" name="url" id="petUrl"
+       placeholder="https://example.com"
+       pattern="https://.*" required>
+    </div>
+    <div class="form-all">
     <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
   </form>
   
 
