@@ -333,12 +333,28 @@ const pets = [
 
   // TARGETING INDEX.HTML FORM ON DOM
 
-  const form = document.querySelector('form')
+  const form = document.querySelector(
+    "form");
 
-  const createPet = () => {
+// FUNCTION ADDS USER INPUT VALUES TO A NEW OBJECT TO ADD TO PETS ARRAY AND THEN RENDER TO DOM
 
+  const createPet = (event) => {
+    event.preventDefault();
+    
     const newPetObj = {
       id: pets.length + 1,
-      name: document.querySelector(#petName).value
+      name: document.querySelector("#petName").value,
+      color: document.querySelector("#petColor").value,
+      specialSkill: document.querySelector("#petSkill").value,
+      type: document.querySelector("#petType").value,
+      imageUrl: document.querySelector("#petUrl").value,
     }
-  }
+
+    pets.push(newPetObj);
+    cardsOnDom(pets);
+    form.reset();
+  };
+
+  // ADDS EVENT LISTENER TO FORM SUBMIT BUTTON AND PASSES IT BACK TO THE FUNCTION 
+
+  form.addEventListener('submit', createPet);
