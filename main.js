@@ -252,26 +252,30 @@ const pets = [
 
 
 // code from lab part 1
-  // const card = document.querySelector("#card");
+  const card = document.querySelector("#card");
 
-  // for (let i=0; i<pets.length; i++) {
-  //   card.innerHTML += `<div class="card" style="width: 18rem;">
-  //   <img src="${pets[i].imageUrl}" class="card-img-top" alt="...">
-  //   <div class="card-body">
-  //     <h5 class="card-title">${pets[i].name}</h5>
-  //     <p class="card-text">${pets[i].specialSkill}</p>
-  //   </div>
-  //   <ul class="list-group list-group-flush">
-  //     <li class="list-group-item">Species: ${pets[i].type}</li>
-  //     <li class="list-group-item">Color: ${pets[i].color}</li>
-  //   </ul>
-  // </div>`
-  // }
+  for (let i=0; i<pets.length; i++) {
+    card.innerHTML += `<div class="card" style="width: 18rem;">
+    <img src="${pets[i].imageUrl}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${pets[i].name}</h5>
+      <p class="card-text">${pets[i].specialSkill}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Species: ${pets[i].type}</li>
+      <li class="list-group-item">Color: ${pets[i].color}</li>
+    </ul>
+  </div>`
+  }
+
+  // FUNCTION RENDERS HTML STRING ASSIGNED TO VARIABLE TO THE DOM IN HTML ELEMENT/ID SELECTED.
 
   const renderToDom = (divId, htmlToRender) => {
     const selectedDiv = document.querySelector(divId);
     selectedDiv.innerHTML = htmlToRender;
   };
+
+// FUNCTION TAKES AN ARRAY AND PASSES KEYS FROM OBJECTS WITHIN ARRAY INTO HTML ON THE DOM CREATING CARDS FOR EACH OBJECT & THE KEY-VALUES WITHIN IT. RENDERS RESULTING HTML CARDS TO THE DOM. 
 
   const cardsOnDom = (array) => {
     let domString = "";
@@ -289,6 +293,8 @@ const pets = [
     renderToDom("#card", domString);
   };
 
+  // FUNCTION TO FILTER PET OBJECT BY TYPE INTO NEW ARRAY 
+
   const filter = (array, typeString) => {
     const petArray = [];
     for (const member of array) {
@@ -299,10 +305,14 @@ const pets = [
     return petArray;
   };
 
+  // TARGETING BUTTONS ON DOM FOR FILTERED TYPE EVENT LISTENER (BELOW) 
+
   const showAll = document.querySelector("#showAllButton");
   const catOnly = document.querySelector("#buttonCat");
   const dinoOnly = document.querySelector("#buttonDino");
   const dogOnly = document.querySelector ("#buttonDog");
+
+// ADDING CLICK FUNCTIONALITY TO FILTER BY TYPE VIA EVENT LISTENERS -> BUTTONS BY USING CARDS ON DOM/FILTER FUNCTIONS
 
   showAll.addEventListener('click', () => {
     cardsOnDom(pets);
