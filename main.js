@@ -330,3 +330,15 @@ const pets = [
     const showDogs = filter(pets, 'dog');
     cardsOnDom(showDogs);
   });
+
+  // TARGETING INDEX.HTML FORM ON DOM
+
+  const form = document.querySelector('form')
+
+  const createPet = () => {
+
+    const newPetObj = {
+      id: pets.length + 1,
+      name: document.querySelector(#petName).value
+    }
+  }
