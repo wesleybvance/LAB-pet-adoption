@@ -254,19 +254,19 @@ const pets = [
 // code from lab part 1
   const card = document.querySelector("#card");
 
-  for (let i=0; i<pets.length; i++) {
-    card.innerHTML += `<div class="card" style="width: 18rem;">
-    <img src="${pets[i].imageUrl}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">${pets[i].name}</h5>
-      <p class="card-text">${pets[i].specialSkill}</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Species: ${pets[i].type}</li>
-      <li class="list-group-item">Color: ${pets[i].color}</li>
-    </ul>
-  </div>`
-  }
+  // for (let i=0; i<pets.length; i++) {
+  //   card.innerHTML += `<div class="card" style="width: 18rem;">
+  //   <img src="${pets[i].imageUrl}" class="card-img-top" alt="...">
+  //   <div class="card-body">
+  //     <h5 class="card-title">${pets[i].name}</h5>
+  //     <p class="card-text">${pets[i].specialSkill}</p>
+  //   </div>
+  //   <ul class="list-group list-group-flush">
+  //     <li class="list-group-item">Species: ${pets[i].type}</li>
+  //     <li class="list-group-item">Color: ${pets[i].color}</li>
+  //   </ul>
+  // </div>`
+  // }
 
   // FUNCTION RENDERS HTML STRING ASSIGNED TO VARIABLE TO THE DOM IN HTML ELEMENT/ID SELECTED.
 
@@ -287,11 +287,15 @@ const pets = [
         <p class="card-text">${member.specialSkill}</p>
         <p class="card-text">${member.type}</p>
         <p class="card-text">${member.color}</p>
+        <button type="button" class="btn btn-primary" id="delete--${member.id}">Delete</button>
       </div>
     </div>`;
     }
     renderToDom("#card", domString);
   };
+
+// RENDER ALL OBJECTS / PETS ON DOM AT PAGE START 
+cardsOnDom(pets);
 
   // FUNCTION TO FILTER PET OBJECT BY TYPE INTO NEW ARRAY 
 
