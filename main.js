@@ -362,3 +362,24 @@ cardsOnDom(pets);
   // ADDS EVENT LISTENER TO FORM SUBMIT BUTTON AND PASSES IT BACK TO THE FUNCTION 
 
   form.addEventListener('submit', createPet);
+
+  // ADD EVENT LISTENER TO DELETE CARDS ONCLICK FOR DELETE BUTTON
+
+  card.addEventListener('click', (e) => {
+    if (e.target.id.includes("delete")) {
+      // restructuring - target id of clicked card by splitting "delete -- idnumber" and returning [delete, idnumber] to array, then grabbing that id number
+      const [, id] = e.target.id.split("--");
+
+      const index = pets.findIndex(e => e.id === Number(id));
+      
+      pets.splice(index, 1);
+
+      cardsOnDom(pets);
+    }
+  });
+  
+  const startApp = () => {
+    cardsOnDom(pets);
+  }
+
+  startApp()
