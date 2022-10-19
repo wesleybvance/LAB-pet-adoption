@@ -13,7 +13,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
       type: "dino",
-      imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg",
+      imageUrl: "https://i.pinimg.com/564x/bf/0a/4e/bf0a4e068341cca76a51427a7c5fa4df.jpg",
     },
     {
       id: 3,
@@ -61,7 +61,7 @@ const pets = [
       color: "Grey",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
       type: "dino",
-      imageUrl: "http://www.theouthousers.com/images/jck//ThanosCopter/news/grumpasaur.jpg"
+      imageUrl: "https://i.pinimg.com/474x/a6/3a/e3/a63ae3e11448b5b99c9378bc8c2f0aa3.jpg"
     },
     {
       id: 9,
@@ -85,7 +85,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Can be around food without staring creepily at it.",
       type: "dino",
-      imageUrl: "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600"
+      imageUrl: "https://i.pinimg.com/474x/e6/cc/37/e6cc37e501b6fec2fb5b7f6e0f9c32b2.jpg"
     },
     {
       id: 12,
@@ -125,7 +125,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Drives at a safe rate of speed in snow or rain.",
       type: "dino",
-      imageUrl: "https://images.readwrite.com/wp-content/uploads/2018/03/t-rex-dino-quiz-e1490854556549.jpg"
+      imageUrl: "https://i.pinimg.com/564x/cf/af/1d/cfaf1d0d8201783a351b3f66f2be1efa.jpg"
     },
     {
      id: 17,
@@ -133,7 +133,7 @@ const pets = [
       color: "Yellow",
       specialSkill: "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Close_Up_Yawn.jpg"
+      imageUrl: "https://i.pinimg.com/474x/b1/cc/f6/b1ccf649ab0191fc7dcc1c8169656e63.jpg"
     },
     {
       id: 18,
@@ -141,7 +141,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Proficient in air guitar",
       type: "dino",
-      imageUrl: "https://www.nation.co.ke/image/view/-/4078922/highRes/1742693/-/maxw/600/-/1453yvh/-/DINO.jpg"
+      imageUrl: "https://i.pinimg.com/564x/81/34/82/8134821139e87e3879b02cc42bffb5ef.jpg"
     },
     {
       id: 19,
@@ -149,7 +149,7 @@ const pets = [
       color: "Blue",
       specialSkill: "Listens attentively to boring stories.",
       type: "dog",
-      imageUrl: "http://dailynewsdig.com/wp-content/uploads/2014/03/Creative-And-Funny-Dog-Stock-Photography-Pictures-2.jpg"
+      imageUrl: "https://i.pinimg.com/474x/40/a3/17/40a317adc3248988d53ac6a5ca60aa7b.jpg"
     },
     {
       id: 20,
@@ -157,7 +157,7 @@ const pets = [
       color: "Black",
       specialSkill: "Uses litter box at appropriate hours.",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Lazy_White_Cat.jpg"
+      imageUrl: "https://i.pinimg.com/474x/73/8b/94/738b942f73a08f130256ae9f5e3e626a.jpg"
     },
     {
       id: 21,
@@ -165,7 +165,7 @@ const pets = [
       color: "Red",
       specialSkill: "Owns a Nintendo Power Glove.",
       type: "dino",
-      imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715"
+      imageUrl: "https://i.pinimg.com/564x/6b/cf/8c/6bcf8c12d087b5dedc9e068b62611199.jpg"
     },
     {
         id: 22,
@@ -173,7 +173,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Is comfortable with jokes about his receding hairline.",
       type: "cat",
-      imageUrl: "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg"
+      imageUrl: "https://i.pinimg.com/736x/0b/f8/f2/0bf8f201ea8f7b0e8d406a8312b6ab38.jpg"
     },
     {
         id: 23,
@@ -189,7 +189,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Participates in karaoke but does not force others to go out to karaoke.",
       type: "dog",
-      imageUrl: "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg"
+      imageUrl: "https://i.pinimg.com/474x/15/36/e7/1536e7de67f8f992c595a308ec8ae363.jpg"
     },
     {
       id: 25,
@@ -197,7 +197,7 @@ const pets = [
       color: "Red",
       specialSkill: "Knows the words to 4 rap songs.",
       type: "cat",
-      imageUrl: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg"
+      imageUrl: "https://i.pinimg.com/474x/4c/c8/1f/4cc81ff3b506a338177a5f9511b4c801.jpg"
     },
     {
         id: 26,
@@ -237,7 +237,7 @@ const pets = [
       color: "Red",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
       type: "dino",
-      imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
+      imageUrl: "https://i.pinimg.com/474x/e2/ba/bb/e2babb85848a5cbc38bca3d3e9e03f26.jpg"
     }
   ];
 
@@ -254,19 +254,19 @@ const pets = [
 // code from lab part 1
   const card = document.querySelector("#card");
 
-  for (let i=0; i<pets.length; i++) {
-    card.innerHTML += `<div class="card" style="width: 18rem;">
-    <img src="${pets[i].imageUrl}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">${pets[i].name}</h5>
-      <p class="card-text">${pets[i].specialSkill}</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Species: ${pets[i].type}</li>
-      <li class="list-group-item">Color: ${pets[i].color}</li>
-    </ul>
-  </div>`
-  }
+  // for (let i=0; i<pets.length; i++) {
+  //   card.innerHTML += `<div class="card" style="width: 18rem;">
+  //   <img src="${pets[i].imageUrl}" class="card-img-top" alt="...">
+  //   <div class="card-body">
+  //     <h5 class="card-title">${pets[i].name}</h5>
+  //     <p class="card-text">${pets[i].specialSkill}</p>
+  //   </div>
+  //   <ul class="list-group list-group-flush">
+  //     <li class="list-group-item">Species: ${pets[i].type}</li>
+  //     <li class="list-group-item">Color: ${pets[i].color}</li>
+  //   </ul>
+  // </div>`
+  // }
 
   // FUNCTION RENDERS HTML STRING ASSIGNED TO VARIABLE TO THE DOM IN HTML ELEMENT/ID SELECTED.
 
@@ -287,11 +287,15 @@ const pets = [
         <p class="card-text">${member.specialSkill}</p>
         <p class="card-text">${member.type}</p>
         <p class="card-text">${member.color}</p>
+        <button type="button" class="btn btn-primary" id="delete--${member.id}">Delete</button>
       </div>
     </div>`;
     }
     renderToDom("#card", domString);
   };
+
+// RENDER ALL OBJECTS / PETS ON DOM AT PAGE START 
+cardsOnDom(pets);
 
   // FUNCTION TO FILTER PET OBJECT BY TYPE INTO NEW ARRAY 
 
@@ -333,12 +337,49 @@ const pets = [
 
   // TARGETING INDEX.HTML FORM ON DOM
 
-  const form = document.querySelector('form')
+  const form = document.querySelector(
+    "form");
 
-  const createPet = () => {
+// FUNCTION ADDS USER INPUT VALUES TO A NEW OBJECT TO ADD TO PETS ARRAY AND THEN RENDER TO DOM
 
+  const createPet = (event) => {
+    event.preventDefault();
+    
     const newPetObj = {
       id: pets.length + 1,
-      name: document.querySelector(#petName).value
+      name: document.querySelector("#petName").value,
+      color: document.querySelector("#petColor").value,
+      specialSkill: document.querySelector("#petSkill").value,
+      type: document.querySelector("#petType").value,
+      imageUrl: document.querySelector("#petUrl").value,
     }
+
+    pets.push(newPetObj);
+    cardsOnDom(pets);
+    form.reset();
+  };
+
+  // ADDS EVENT LISTENER TO FORM SUBMIT BUTTON AND PASSES IT BACK TO THE FUNCTION 
+
+  form.addEventListener('submit', createPet);
+
+  // ADD EVENT LISTENER TO DELETE CARDS ONCLICK FOR DELETE BUTTON
+
+  card.addEventListener('click', (e) => {
+    if (e.target.id.includes("delete")) {
+      // restructuring - target id of clicked card by splitting "delete -- idnumber" and returning [delete, idnumber] to array, then grabbing that id number
+      const [, id] = e.target.id.split("--");
+
+      const index = pets.findIndex(e => e.id === Number(id));
+      
+      pets.splice(index, 1);
+
+      cardsOnDom(pets);
+    }
+  });
+  
+  const startApp = () => {
+    cardsOnDom(pets);
   }
+
+  startApp()
